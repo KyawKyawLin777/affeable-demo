@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html th:replace="layout/mainLayout :: layout(~{::main})"
+        lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+    <main role="main">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptatum.</h3>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus autem eligendi enim facilis ipsam magni quos? Accusantium alias, aliquid explicabo maiores obcaecati quas quia vel voluptas. Illo, quisquam, reprehenderit.</span><span>Consequuntur debitis ex iste minus! Aperiam atque blanditiis commodi consequatur cumque debitis dolor esse est et exercitationem ipsum libero, numquam odit officiis perferendis placeat, quibusdam quo, ratione recusandae rerum vel?</span></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <a th:href="@{'/product/products?id=1'}">
+                                <img src="../static/images/categories/dairy.jpg" alt="dairy"
+                                     th:src="@{/images/categories/dairy.jpg}" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a th:href="@{'product/products?id=2'}">
+                                <img src="../static/images/categories/meats.jpg" alt="dairy"
+                                     th:src="@{/images/categories/meats.jpg}" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a th:href="@{'product/products?id=3'}">
+                                <img src="../static/images/categories/bakery.jpg" alt="dairy"
+                                     th:src="@{/images/categories/bakery.jpg}" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a th:href="@{'product/products?id=4'}">
+                                <img src="../static/images/categories/fruitveg.jpg" alt="dairy"
+                                     th:src="@{/images/categories/fruitveg.jpg}" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
